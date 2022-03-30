@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #6c63ff;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.scroll-down header{
+    background-color: blue;
+}
+.scroll-up header{
+    background-color:#2D4454;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6c63ff;
+}
+.item{
+    background-color: rgb(8, 4, 4);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid #6c63ff;
+    border-left-color: black;
+    
+}
+#content{
+    height: 900px;
+    width: 100%;
+}
+.move{
+    
+    height: 450px;
+    width: 350px;
+}
+.box{
+    height: 420px;
+    padding-left: 20px;
+    width: 320px;
+}
+#projects{
+    height: 1400px;
+    width: 100%;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 400px 400px;
+    gap: 150px 150px;
+    overflow: hidden;
+}
+.grids{
+    background-color: #6c63ff;
+    border-bottom-right-radius: 60%;
+    border-top-left-radius: 60%;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+}
+.grids button{
+    position: absolute;
+    top: 45%;
+    left:40%;
+    width: 30%;
+    font-size: 20px;
+    color: white;
+}
+#fourth{
+    background: rgba(0, 0, 0, 0.463) url(./petsdaily.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#third{
+    background: rgba(0, 0, 0, 0.463) url(./thehomepagedribble.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#second{
+    background: rgba(0, 0, 0, 0.463) url(./boostbusiness.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#first{
+    background: rgba(0, 0, 0, 0.678) url(./mp4nft.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#first:hover{
+    background:url(./mp4nft.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+#second:hover{
+    background:url(./boostbusiness.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+#third:hover{
+    background:url(./thehomepagedribble.png);
+    cursor: pointer;
+    background-size: cover;
+    transition: all ease-in 1s;
+}
+#fourth:hover{
+    background: url(./petsdaily.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+#fifth{
+    background: rgba(0, 0, 0, 0.463) url(./thehomepagedribble.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#fifth:hover{
+    background:url(./thehomepagedribble.png);
+    cursor: pointer;
+    background-size: cover;
+    transition: all ease-in 1s;
+}
+.grids span{
+    color: #6c63ff;
+    font-size: xx-large;
+}
+.btn{
+    display: block;
+    width: 300px;
+    background-color: #6c63ff;
+    height: 60px;
+    margin: auto;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: #6c63ff;
+}
+.client{
+    height: 460px;
+    width: 350px;
+}
+#clientbased{
+    height: 950px;
+}
+.profile{
+    height: 160px;
+    width: 160px;
+    margin: auto;
+    margin-top: -60px;
+    box-shadow: 2px 2px 65px 5px rgba(0, 0, 0, 0.219);
+}
+.input1{
+    width: 100%;
+    padding-left: 20px;
+}
+.input1::placeholder,textarea::placeholder{
+    color: white;
+    padding-left: 20px;
+    font-size: x-large;
+}
+.input1:focus,textarea:focus{
+    outline-color: #6c63ff;
+    box-shadow: 1px 1px 6px 1px #6c63ff;
+}
+#contacts{
+    height: 900px;
+}
+.send{
+    background-color: #6c63ff;
+    height: 60px;
+    width: 150px;
+}
+footer{
+    height: 200px;
+    
+}
