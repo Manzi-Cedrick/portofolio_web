@@ -77,56 +77,56 @@ header{
     color: white;
 }
 #fourth{
-    background: rgba(0, 0, 0, 0.463) url(./petsdaily.png);
+    background: rgba(0, 0, 0, 0.463) url(./images/petsdaily.png);
     background-blend-mode: overlay;
     background-size: cover;
 }
 #third{
-    background: rgba(0, 0, 0, 0.463) url(./thehomepagedribble.png);
+    background: rgba(0, 0, 0, 0.463) url(./images/thehomepagedribble.png);
     background-blend-mode: overlay;
     background-size: cover;
 }
 #second{
-    background: rgba(0, 0, 0, 0.463) url(./boostbusiness.png);
+    background: rgba(0, 0, 0, 0.463) url(./images/boostbusiness.png);
     background-blend-mode: overlay;
     background-size: cover;
 }
 #first{
-    background: rgba(0, 0, 0, 0.678) url(./mp4nft.png);
+    background: rgba(0, 0, 0, 0.678) url(./images/mp4nft.png);
     background-blend-mode: overlay;
     background-size: cover;
 }
 #first:hover{
-    background:url(./mp4nft.png);
+    background:url(./images/mp4nft.png);
     background-size: cover;
     cursor: pointer;
     transition: all ease-in 1s;
 }
 #second:hover{
-    background:url(./boostbusiness.png);
+    background:url(./images/boostbusiness.png);
     background-size: cover;
     cursor: pointer;
     transition: all ease-in 1s;
 }
 #third:hover{
-    background:url(./thehomepagedribble.png);
+    background:url(./images/thehomepagedribble.png);
     cursor: pointer;
     background-size: cover;
     transition: all ease-in 1s;
 }
 #fourth:hover{
-    background: url(./petsdaily.png);
+    background: url(./images/petsdaily.png);
     background-size: cover;
     cursor: pointer;
     transition: all ease-in 1s;
 }
 #fifth{
-    background: rgba(0, 0, 0, 0.463) url(./thehomepagedribble.png);
+    background: rgba(0, 0, 0, 0.463) url(./images/thehomepagedribble.png);
     background-blend-mode: overlay;
     background-size: cover;
 }
 #fifth:hover{
-    background:url(./thehomepagedribble.png);
+    background:url(./images/thehomepagedribble.png);
     cursor: pointer;
     background-size: cover;
     transition: all ease-in 1s;
