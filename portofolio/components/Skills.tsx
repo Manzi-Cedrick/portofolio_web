@@ -9,7 +9,7 @@ function Skills() {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4 lg:gap-4 pt-[4em]'>
                 {SkillsArray.map((skill) => (
-                    <div key={skill.id} className='bg-zinc-900 hover:cursor-pointer text-violet-500 p-5 min-h-[30vh] rounded-lg min-w-[25vw] bg-opacity-65 bg-clip-padding' style={{ "backdropFilter": "blur(50px);" }}>
+                    <div key={skill.id} className='bg-zinc-900 hover:cursor-pointer text-violet-500 p-5 min-h-[30vh] rounded-lg min-w-[25vw] bg-opacity-65 bg-clip-padding' style={{ "backdropFilter": "blur(50px)" }}>
                         <div className='flex justify-between'>
                             <h1>{skill.courseName}</h1>
                             <div className='p-2 text-center font-bold drop-shadow-2xl px-8 rounded-full flex justify-center place-content-center bg-backG text-yellow-500'>
@@ -18,7 +18,7 @@ function Skills() {
                         </div>
                         <div>
                             <h1 className='text-right text-white translate-x-18 translate-y-6'>{skill.percentage}%</h1>
-                            <div className='bg-zinc-800 my-8 p-8 rounded-full w-full min-h-12 bg-opacity-60 bg-clip-padding' style={{ "backdropFilter": "blur(20px);" }}>
+                            <div className='bg-zinc-800 my-8 p-8 rounded-full w-full min-h-12 bg-opacity-60 bg-clip-padding' style={{ "backdropFilter": "blur(20px)" }}>
                                 <div className="h-2 bg-white rounded-full w-full">
                                     <div className={`h-2 bg-backG flex justify-end rounded-full w-[${skill.width}] `}>
                                         <div className="h-4 -translate-y-1 bg-backG rounded-full w-4">
