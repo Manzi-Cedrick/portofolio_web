@@ -36,9 +36,9 @@ function Projects() {
                 Others
             </button>
         </div>
-        <div className='grid grid-cols-3 py-6 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-6 lg:gap-4 py-[2em]'>
           {ProjectDataArray.map((project)=>(
-            <div key={project.projectId} className='group bg-opacity-80 h-[40vh] max-w-[30vw] relative overflow-hidden'>
+            <div key={project.projectId} className='group bg-opacity-80 h-[40vh] min-w-[25vw] relative overflow-hidden'>
                 <img src={`${project.projectImage}`} className='object-cover h-full w-full group-hover:scale-100  ' alt="" />
                 <div className='text-white group-hover:flex bg-slate-900 w-full h-full bg-opacity-80 absolute top-0 left-0 flex-col hidden duration-500 justify-center place-items-center'>
                     <h1 className='text-3xl font-bold text-slate-400'>{project.projectName}</h1>
