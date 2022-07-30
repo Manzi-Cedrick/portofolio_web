@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Contacts from '../components/Contacts'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <Hero/>
         <Skills/>
         <Projects/>
+        <Contacts/>
       </main>
       <footer className="flex h-24  items-center justify-center border-t">
         <Link
