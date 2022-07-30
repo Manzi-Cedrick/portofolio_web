@@ -54,7 +54,7 @@ export const SkillsArray :{
     ranking: 10,
 }
 ]
-export const ProjectDataArray :{
+export interface ProjectDataArray{
     projectId: number;
     projectImage: string;
     projectName: string;
@@ -62,7 +62,8 @@ export const ProjectDataArray :{
     projectDuration : string;
     tags: string[];
     projectUrl : string;
-} []=[
+}
+export const  Project_arr : ProjectDataArray []=[
     {
     projectId: 1,
     projectImage: 'https://www.captain-design.com/blog/content/images/2022/02/image-2.png',
@@ -78,7 +79,7 @@ export const ProjectDataArray :{
         projectName: 'PinCode Edition',
         projectCourses : 'MERN Stack- Typescript',
         projectDuration : "3 days",
-        tags: ['web','ui'],
+        tags: ['web','ui','others'],
         projectUrl : ''
     },
     {
@@ -87,7 +88,7 @@ export const ProjectDataArray :{
         projectName: 'Typescript Guide',
         projectCourses : 'MERN Stack- Typescript',
         projectDuration : "3 days",
-        tags: ['web'],
+        tags: ['web','sanity'],
         projectUrl : ''
     },
     {
@@ -112,7 +113,7 @@ export const ProjectDataArray :{
         projectName: 'Movie Now',
         projectCourses : 'Figma',
         projectDuration : "2 days",
-        tags: ['web','ui'],
+        tags: ['web','ui','others'],
         projectUrl : ''
     }
 ]
