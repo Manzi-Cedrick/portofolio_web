@@ -36,17 +36,23 @@ function Projects() {
                 Others
             </button>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-6 lg:gap-4 py-[2em]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-2 gap-6 lg:gap-4 py-[2em]'>
           {ProjectDataArray.map((project)=>(
-            <div key={project.projectId} className='group bg-opacity-80 h-[40vh] min-w-[25vw] relative overflow-hidden'>
-                <img src={`${project.projectImage}`} className='object-cover h-full w-full group-hover:scale-100  ' alt="" />
-                <div className='text-white group-hover:flex bg-slate-900 w-full h-full bg-opacity-80 absolute top-0 left-0 flex-col hidden duration-500 justify-center place-items-center'>
-                    <h1 className='text-3xl font-bold text-slate-400'>{project.projectName}</h1>
-                    <p>{project.projectCourses}</p>
+            <div className='block'>
+            <div key={project.projectId} className='group bg-opacity-80 h-[50vh] min-w-[20vw] relative overflow-hidden'>
+                <img src={`${project.projectImage}`} className='object-cover h-full w-full group-hover:scale-110 duration-300  ' alt="" />
+                <div className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-slate-800 bg-opacity-50 hidden group-hover:flex group-hover:cursor-pointer justify-center place-items-center'>
+
+                </div>
+            </div>
+            <div className='text-white flex p-5 bg-slate-900  min-h-[20vh] min-w-[20vw]   duration-500 justify-between '>
+                    <div>
+                    <h1 className='text-2xl font-black font-serif text-slate-400'>{project.projectName}</h1>
+                    <p className='text-backG font-bold'>{project.projectCourses}</p>
                     <small>{project.tags.map((tageach)=>(tageach))}</small>
-                    <div className='flex gap-4'>
-                      <button className="btn text-white bg-backG rounded-full btn-primary  p-3 "> <FaPlus/> </button>
-                      <button className="btn text-white bg-backG rounded-full btn-primary  p-3 "><FaLink/></button>
+                    </div>
+                    <div className='flex gap-4 py-5'>
+                      <button className="btn text-backG font-bold border-solid border-2 border-backG rounded-xl btn-primary flex justify-center gap-2 place-items-center  w-36 h-14"> <FaPlus/> <span>View More</span> </button>
                     </div>
                 </div>
             </div>
