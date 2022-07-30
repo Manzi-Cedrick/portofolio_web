@@ -70,12 +70,12 @@ export const  Project_arr : ProjectDataArray []=[
     projectName: 'Online School Techers',
     projectCourses : 'HTML/CSS/JAVASCRIPT',
     projectDuration : "3 days",
-    tags: ['web','ui'],
+    tags: ['web'],
     projectUrl : ''
     },
     {
         projectId: 2,
-        projectImage: 'https://cdn.dribbble.com/users/2390402/screenshots/17245318/with_sound.png?compress=1&resize=400x300&vertical=top',
+        projectImage: 'https://templatesjungle.com/wp-content/uploads/edd/2022/01/ultras-casual-wear-ecommerce-figma-template-cover-1024x768.jpg',
         projectName: 'PinCode Edition',
         projectCourses : 'MERN Stack- Typescript',
         projectDuration : "3 days",
@@ -84,7 +84,7 @@ export const  Project_arr : ProjectDataArray []=[
     },
     {
         projectId: 3,
-        projectImage: 'https://s3.envato.com/files/311567532/Image%20Preview%20Set%20Figma/01_preview.jpg',
+        projectImage: 'https://designshack.net/wp-content/uploads/Free-Agency-Website-Figma-Template.jpg',
         projectName: 'Typescript Guide',
         projectCourses : 'MERN Stack- Typescript',
         projectDuration : "3 days",
@@ -93,7 +93,7 @@ export const  Project_arr : ProjectDataArray []=[
     },
     {
         projectId: 4,
-        projectImage: 'https://cdn.dribbble.com/users/107759/screenshots/11039305/daily_kit_1_db.png?compress=1&resize=400x300',
+        projectImage: 'https://www.vandelaydesign.com/wp-content/uploads/lykke.jpg',
         projectName: 'JobListing Application',
         projectCourses : 'PHP - Laravel',
         projectDuration : "3 days",
@@ -101,7 +101,7 @@ export const  Project_arr : ProjectDataArray []=[
         projectUrl : ''
     },{
         projectId: 5,
-        projectImage: 'https://www.captain-design.com/content/templates/school-solved-simple-html-template-code-for-school/68a2629c3f5e319af0edf95ad865d32a.jpeg?ver=15sd1sd',
+        projectImage: 'https://assets.materialup.com/uploads/ba434abe-1c2d-4d55-b5dc-672d55b2675b/preview.jpg',
         projectName: 'Umurimo UI',
         projectCourses : 'Figma',
         projectDuration : "2 days",
@@ -109,7 +109,7 @@ export const  Project_arr : ProjectDataArray []=[
         projectUrl : ''
     },{
         projectId: 6,
-        projectImage: 'https://uifreebies.net/wp-content/uploads/2020/08/Orix-File-Manager-App-Free.jpg',
+        projectImage: 'https://figmaelements.com/wp-content/uploads/2021/03/figma-real-estate-template.png',
         projectName: 'Movie Now',
         projectCourses : 'Figma',
         projectDuration : "2 days",
