@@ -1,8 +1,21 @@
 import Link from 'next/link'
-import React from 'react'
-import { ProjectDataArray } from './data.types'
+import React,{useEffect, useState} from 'react'
+import { ProjectDataArray,Project_arr } from './data.types'
 import { FaPlus, FaLink } from 'react-icons/fa';
 function Projects() {
+   const [ProjectDataArray,setProjectData] = useState<ProjectDataArray[]>(Project_arr);
+//    const filter = (button:string) =>{
+//        const filteredData = ProjectDataArray.filter((project)=>project.tags.includes(button));
+//        return setProjectData(filteredData);
+//     }
+    // useEffect(() => {
+     const filter = (button:string) =>{
+         const filteredData = ProjectDataArray.filter((project)=>project.tags.includes(button));
+         return setProjectData(filteredData);
+    }
+        // filter()
+    // }, [ProjectDataArray])
+    
   return (
     <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-black">
         <div className="text-center mx-auto flex text-backG text-[14px] flex-col gap-4 justify-center py-5  ">
@@ -10,20 +23,20 @@ function Projects() {
             <p className="text-white">Since I came into this field, I've gained a good understanding of problem-solving and how to approach challenges posed by different stacks and environments and have dedicated a lot of time to deliver fantastic products at all costs.</p>
         </div>
         <div className="flex justify-center text-backG gap-4">
-            <button className="btn text-white rounded-full btn-primary bg-backG p-5 lg:px-10">
+            <button onClick={()=>setProjectData(Project_arr)} className="btn text-white rounded-full btn-primary bg-backG p-5 lg:px-10">
                 All
             </button>
-            <button className="btn text-white btn-primary  p-5 lg:px-10">
+            <button onClick={()=>filter('ui')} className="btn text-white btn-primary  p-5 lg:px-10">
                 UI
             </button>
-            <button className="btn text-white btn-primary  p-5 lg:px-10">
+            <button onClick={()=>filter('web')} className="btn text-white btn-primary  p-5 lg:px-10">
                 web
             </button>
 
-            <button className="btn text-white btn-primary  p-5 lg:px-10">
+            <button onClick={()=>filter('sanity')} className="btn text-white btn-primary  p-5 lg:px-10">
                 sanity
             </button>
-            <button className="btn text-white btn-primary  p-5 lg:px-10">
+            <button onClick={()=>filter('others')} className="btn text-white btn-primary  p-5 lg:px-10">
                 others
             </button>
         </div>
