@@ -12,7 +12,7 @@ function Hero() {
                 <span className="px-[1em]">Creativity</span>
             </div>
             <svg className="mt-10" width="186" height="11" viewBox="0 0 186 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0.972973" y1="6.00007" x2="185.973" y2="5.00007" stroke="#6C63FF" stroke-width="10"/>
+            <line x1="0.972973" y1="6.00007" x2="185.973" y2="5.00007" stroke="#6C63FF" strokeWidth="10"/>
             </svg>
             <div className=' text-[12px] md:text-[14px] py-2 px-2 my-[2em] lg:w-[50vw]'>
             <p>
