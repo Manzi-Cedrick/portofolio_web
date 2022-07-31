@@ -1,11 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
-// import Image from 'next/image'
-import projectsvg from '../public/assets/project.svg'
 function Hero() {
   return (
     <div className="min-h-screen  lg:px-[4em]  bg-[#222222]">
     <div className=" flex ">
-        <img src="/assets/design.svg" alt="Vercel Logo" className=' absolute top-4 md:top-20 md:left-[20%]  h-[40em]  bottom-0 right-0  ' />
+        <img src="/assets/design.svg" alt="Vercel Logo" className=' absolute top-4 md:top-20 md:left-[0%]  h-[40em]  bottom-0 right-0  ' />
         <div className="text-white px-4  lg:px-8 pt-[4em]">
             <div className="flex  font-semibold  text-2xl lg:text-7xl flex-col gap-2">
                 <span>Building</span> 
