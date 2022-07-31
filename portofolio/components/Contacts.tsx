@@ -8,7 +8,7 @@ function Contacts() {
             <h1 className="font-semibold">Contact Page</h1>
             <p className="text-[#ffffffab]">Since I came into this field, I've gained a good understanding of problem-solving and how to approach challenges posed by different stacks and environments and have dedicated a lot of time to deliver fantastic products at all costs.</p>
         </div>
-        <div className='md:flex flex-col gap-4 relative md:flex-row lg:flex-row justify-between pt-10'>
+        <div className='md:flex flex-col gap-4 relative md:flex-row lg:flex-row justify-between py-10'>
             <div className='flex flex-col gap-8'>
             <div className='flex gap-4'>
                     <div className='p-5 flex justify-center place-items-center bg-slate-900 rounded-full'>
@@ -50,7 +50,7 @@ function Contacts() {
                 <input type="text" placeholder="Subject" className=' py-5 min-w-full  bg-slate-900 border-none  text-backG px-[1em]'/>
                 <textarea name="messageBox" id="" placeholder='Enter message'  className=' resize-none py-5 min-w-full h-[30vh] bg-slate-900 border-none  text-backG px-[1em]' ></textarea>
             </div>
-            <div>
+            <div >
                 <button className='bg-backG text-white flex justify-center rounded-lg place-items-center gap-4 p-5 px-10'><FaPaperPlane/>Submit Your Reviews</button>
             </div>
         </div>
