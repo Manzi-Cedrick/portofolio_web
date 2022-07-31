@@ -7,7 +7,7 @@ function Skills() {
             <div className="text-center flex text-backG text-[14px] justify-center py-5  ">
                 <h1 className="font-semibold">SKILLS & HIGHLIGHTS</h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4 lg:gap-4 pt-[4em]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4 lg:gap-4 pt-[4em]o'>
                 {SkillsArray.map((skill) => (
                     <div key={skill.id} className='bg-zinc-900 hover:cursor-pointer text-violet-500 p-5 min-h-[30vh] rounded-lg min-w-[25vw] bg-opacity-65 bg-clip-padding' style={{ "backdropFilter": "blur(50px)" }}>
                         <div className='flex justify-between'>
