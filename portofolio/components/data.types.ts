@@ -117,3 +117,47 @@ export const  Project_arr : ProjectDataArray []=[
         projectUrl : ''
     }
 ]
+export interface LinkProfiles {
+    id: number;
+    icon : string;
+    socioMediaUrl : string;
+    socialMediaName : string;
+}
+export const LinksProfile:LinkProfiles[]=[
+{
+    id: 1,
+    icon: "FaInstagram",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "Instagram"
+},{
+    id: 2,
+    icon: "FaFacebook",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "FaceBook"
+},{
+    id: 3,
+    icon: "FaBehance",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "Behance"
+},{
+    id: 4,
+    icon: "FaTwitter",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "Twitter"
+},{
+    id: 5,
+    icon: "FaLinkedin",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "LinkedIn"
+},{
+    id: 6,
+    icon: "FaDribble",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "Dribble"
+},{
+    id: 7,
+    icon: "FaGithubAlt",
+    socioMediaUrl: "http://instagram/cedrickmanzii01",
+    socialMediaName: "Github"
+}
+]
