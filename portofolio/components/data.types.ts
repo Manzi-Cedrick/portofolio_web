@@ -161,3 +161,29 @@ export const LinksProfile:LinkProfiles[]=[
     socialMediaName: "Github"
 }
 ]
+export interface SkillSet{
+    id:number;
+    path:string;
+    category:string;
+}
+export const Combination:SkillSet[]=[{
+    id:1,
+    path:"UI/UX",
+    category : "Design"
+},{
+    id:2,
+    path:"Frontend",
+    category : "Development"
+},{
+    id:3,
+    path:"Backend",
+    category : "Development"
+},{
+    id:4,
+    path:"Web3",
+    category : "Technology"
+},{
+    id:5,
+    path:"Freelancing",
+    category : "Globally"
+}]
