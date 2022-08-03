@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { Combination } from './data.types'
 function Hero() {
   return (
     <div className="min-h-screen  lg:px-[4em]  bg-[#222222]">
@@ -35,31 +36,13 @@ function Hero() {
         </div>
     </div>
     <div className="grid lg:pt-5 lg:grid-cols-5  lg:bg-transparent md:grid-cols-3 gap-[4em] lg:p-0 p-5 sm:grid-cols-2 grid-cols-1   text-white font-semibold ">
-        <div className="flex gap-2">
+        {Combination.map((skill)=>(
+        <div key={skill.id} className="flex gap-2">
             <div className="h-4 w-10 rounded-xl bg-violet-500 animate-spin"></div>
-            <span className='text-violet-500'>Frontend</span>
-            <span>Development</span>
+            <span className='text-violet-500'>{skill.path}</span>
+            <span>{skill.category}</span>
         </div>
-        <div className="flex gap-2">
-            <div className="h-4 w-10 rounded-xl bg-violet-500 animate-spin"></div>
-            <span className='text-violet-500'>Backend</span>
-            <span>Development</span>
-        </div>
-        <div className="flex gap-2">
-            <div className="h-4 w-10  rounded-xl bg-violet-500 animate-spin"></div>
-            <span className='text-violet-500'>UI/UX</span>
-            <span>Designer</span>
-        </div>
-        <div className="flex gap-2">
-            <div className="h-4 w-10 rounded-xl bg-violet-500 animate-spin"></div>
-            <span className='text-violet-500'>WEB 3</span>
-            <span>Technology</span>
-        </div>
-        <div className="flex gap-2">
-            <div className="h-4 w-10 rounded-xl bg-violet-500 animate-spin"></div>
-            <span className='text-violet-500'>Freelancing</span>
-            <span>Globally</span>
-        </div>
+        ))}
     </div>
     </div>
   )
