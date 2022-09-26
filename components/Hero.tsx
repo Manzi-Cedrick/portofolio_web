@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import { Combination } from './data.types'
+import { Combination } from '../utils/data.types'
 function Hero() {
   return (
-    <div className="min-h-screen  lg:px-[4em]  bg-[#222222]">
+    <div id="hero" className="min-h-screen  lg:px-[4em]  bg-[#222222]">
     <div className=" flex ">
         <img src="/assets/design.svg" alt="Vercel Logo" className=' absolute top-4 md:top-20 md:left-[0%]  h-[40em]  bottom-0 right-0  ' />
         <div className="text-white px-4  lg:px-8 pt-[4em]">

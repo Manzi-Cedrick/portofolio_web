@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Navbar() {
@@ -12,8 +13,8 @@ function Navbar() {
     </div>
     <div className='flex flex-1 text-[12px] justify-center'>
         <ul className='flex gap-8 justify-center place-content-center items-center text-white'>
-          <li><a href="">Home</a></li>
-          <li><a href="">Skills</a></li>
+          <li><Link href={`/#home`}>Home</Link></li>
+          <li><Link href={`/#skills`}>Skills</Link></li>
           <li><a href="">Projects</a></li>
           <li><a href="">Contact</a></li>
         </ul>

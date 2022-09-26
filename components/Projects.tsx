@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import { ProjectDataArray, Project_arr } from './data.types'
+import { ProjectDataArray, Project_arr } from '../utils/data.types'
 import { FaPlus, FaLink } from 'react-icons/fa';
 function Projects() {
     const [ProjectDataArray, setProjectData] = useState<ProjectDataArray[]>(Project_arr);
@@ -14,7 +14,7 @@ function Projects() {
     }
 
     return (
-        <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-black">
+        <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-black" id="project">
             <div className="text-center mx-auto flex text-backG text-[14px] flex-col gap-4 justify-center py-5  ">
                 <h1 className="font-semibold">PORTOFOLIO</h1>
                 <p className="text-[#ffffffab]">Since I came into this field, I've gained a good understanding of problem-solving and how to approach challenges posed by different stacks and environments and have dedicated a lot of time to deliver fantastic products at all costs.</p>

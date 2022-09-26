@@ -1,9 +1,9 @@
 import React from 'react'
-import { SkillsArray } from './data.types'
+import { SkillsArray } from '../utils/data.types'
 function Skills() {
 
     return (
-        <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-black">
+        <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-black" id="skills">
             <div className="text-center flex text-backG text-[14px] justify-center py-5  ">
                 <h1 className="font-semibold">SKILLS & HIGHLIGHTS</h1>
             </div>
