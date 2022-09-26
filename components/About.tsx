@@ -16,7 +16,7 @@ const About = () => {
         <div className='flex flex-col text-white gap-10 place-items-center '> 
             <div className='bg-backG h-56 w-56 rounded-full flex justify-center place-items-center '>
                 <div>
-                    <span className='text-9xl hover:scale-110 duration-300 cursor-pointer text-slate-100 animate-pulse font-black '>3</span>
+                    <span className='text-9xl hover:scale-110 duration-300 cursor-pointer text-slate-100 animate-pulseport font-black '>3</span>
                 </div>
             </div>
             <p>Years of <span className='font-black text-2xl'>Experience</span></p>
