@@ -8,14 +8,18 @@ export const LinkArr :{
     linkUrl:'/#hero'
 },{
     id:2,
+    linkName:'About',
+    linkUrl:'/#about'
+},{
+    id:3,
     linkName:'Skills',
     linkUrl:'/#skills'
 },{
-    id:3,
+    id:4,
     linkName:'Projects',
     linkUrl:'/#project'
 },{
-    id:1,
+    id:5,
     linkName:'Contact',
     linkUrl:'/#contact'
 }]
