@@ -16,9 +16,9 @@ function Hero() {
             </svg>
             <div className=' text-[12px] md:text-[14px] py-2 px-2 my-[2em] lg:w-[50vw]'>
             <p>
-            Professional Product Designer, F.E Developer and Backend Developer with the full technologies for the better productivity Different resolutions have been cleared for the most clients and I am Based In Kigali..
-            Professional Product Designer, F.E Developer and Backend Developer with the full technologies for the better productivity Different resolutions have been cleared for the most clients and I am Based In Kigali..
-            Professional Product Designer, F.E Developer and Backend Developer with the full technologies for the better productivity Different resolutions have been cleared for the most clients and I am Based In Kigali..
+            Full-Stack Software Engineer (JavaScript/Python + Ruby Expert) specializing in both server-side and client-side JavaScript and Python, Ruby frameworks such as React, Vue in frontend, Node.js, Django, Ruby on Rails in backend. With over 9 years of professional experience, I have had the opportunity to work on projects that run the gambit from financial platforms, to private business enterprise web applications, to building websites for digital marketing agencies, to working entrepreneurially as a freelance consultant and looking forward to contributing to build the future of the web with my next employer.
+
+
             </p>
            <div className='pt-8 flex gap-6'>
                 <button className='bg-backG btn hover:bg-white hover:text-violet-900 duration-500 text-white p-5 px-8 md:px-10 rounded-full'>
