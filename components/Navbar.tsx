@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
-
+import { LinkArr } from '../utils/constants'
+// import LogoSvg from '../public/assets/logo.svg'
 function Navbar() {
+
   return (
     <header className="navbar flex text-[12px] md:text-xl bg-backG h-14 text-white ">
     <div className='flex justify-center flex-0.5  place-items-center px-2 items-center gap-2'>
-        {/* {logoicon} */}
+      {/* {LogoSvg} */}
         <span>
             Manzi
         </span>
@@ -13,10 +15,11 @@ function Navbar() {
     </div>
     <div className='flex flex-1 text-[12px] justify-center'>
         <ul className='flex gap-8 justify-center place-content-center items-center text-white'>
-          <li><Link href={`/#home`}>Home</Link></li>
-          <li><Link href={`/#skills`}>Skills</Link></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+          {LinkArr.map((link)=>(
+              <li key={link.id}>
+                <Link href={link.linkUrl}>{link.linkName}</Link>
+              </li>
+          ))}
         </ul>
     </div>
 </header>
