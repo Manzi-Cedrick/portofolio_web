@@ -3,9 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <div className="h-[80vh] lg:px-[4em] bg-[#121212]">
-        <div className="text-center flex text-white text-[14px] justify-center py-10  ">
-                <h1 className="font-semibold bg-backG px-2">About <span className='text-[#ffffff55] font-light text-sm '>--Lifestyle</span></h1>
-        </div>
+         <div className="text-center flex text-white text-[14px] justify-center py-10  ">
+                <h1 className="font-semibold  bg-backG px-4 py-4 text-[10px] animate-pulse">About</h1>
+            </div>
         <div className='flex gap-2 place-items-center py-5 justify-evenly'>
         <div className="text-white py-4 max-w-[50vw]">
             <h1 className='py-5'>Hi, I'm <span className='py-4 border-b-2 border-yellow-500 text-xl font-black hover:text-backG'> Manzi Cedrick</span> </h1>
