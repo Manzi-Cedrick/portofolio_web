@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { FaBehance, FaGithub, FaInstagram, FaLinkedin, FaDribbble, FaGithubAlt , FaFacebook, FaTwitter, FaHeart } from 'react-icons/fa'
+import About from '../components/About'
 import Contacts from '../components/Contacts'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <main>
         <Navbar />
         <Hero />
+        <About/>
         <Skills />
         <Projects />
         <Contacts />
