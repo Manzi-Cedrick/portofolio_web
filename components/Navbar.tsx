@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { LinkArr } from '../utils/constants'
+import LogoIcons from '../icons/index'
 // import LogoSvg from '../public/assets/logo.svg'
 function Navbar() {
 
@@ -8,6 +9,7 @@ function Navbar() {
     <header className="navbar flex text-[12px] md:text-xl bg-backG h-14 text-white ">
     <div className='flex justify-center flex-0.5  place-items-center px-2 items-center gap-2'>
       {/* {LogoSvg} */}
+      <LogoIcons/>
         <span>
             Manzi
         </span>
