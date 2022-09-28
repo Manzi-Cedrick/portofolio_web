@@ -5,10 +5,8 @@ import { FaBehance, FaGithub, FaInstagram, FaLinkedin, FaDribbble, FaGithubAlt ,
 import About from '../components/About'
 import Contacts from '../components/Contacts'
 import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
-import { LinksProfile } from '../utils/data.types'
 const Home: NextPage = () => {
   return (
     <div>
@@ -17,7 +15,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
       <main>
-        <Navbar />
         <Hero />
         <About/>
         <Skills />
