@@ -9,7 +9,9 @@ function Navbar() {
     <header className="navbar flex text-[12px] md:text-xl bg-backG h-14 text-white ">
     <div className='flex justify-center flex-0.5  place-items-center px-2 items-center gap-2'>
       {/* {LogoSvg} */}
+      <div className='bg-red-500'>
       <LogoIcons/>
+      </div>
         <span>
             Manzi
         </span>
@@ -23,6 +25,9 @@ function Navbar() {
               </li>
           ))}
         </ul>
+    </div>
+    <div className='flex place-items-center'>
+      <button className='bg-white text-backG border-2 border-yellow-500 rounded-full w-44 h-12 text-sm'>Hire Me</button>
     </div>
 </header>
   )
