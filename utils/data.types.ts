@@ -187,3 +187,17 @@ export const Combination:SkillSet[]=[{
     path:"Freelancing",
     category : "Globally"
 }]
+export interface LoginStructure {
+    email: string;
+    password: string;
+}
+export interface RegisterStructure {
+    username: string;
+    email: string;
+    password: string;
+}
+
+export const LoginFormDummy:LoginStructure={
+    email: "",
+    password : ""
+}
