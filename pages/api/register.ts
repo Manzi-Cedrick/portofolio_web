@@ -33,7 +33,7 @@ export default async function handler(
   const FormData = req.body;
   const errors = await validateForm(FormData);
   if (errors.email || errors.password || errors.username) {
-    res.status(400).json({ message: 'Register Failure', errors });
+    res.status(400).json({ message: 'Register Failure (Bad Inputs )', errors });
   } else {
     const hashedPassword = await bcrypt.hash(FormData.password, 10);
     const newUser = new User({
