@@ -6,7 +6,7 @@ import LogoIcons from '../icons/index'
 function Navbar() {
 
   return (
-    <header className="navbar flex text-[12px] md:text-xl bg-backG h-14 text-white ">
+    <header className="navbar flex text-[12px] md:text-xl bg-backG h-[10vh] text-white ">
     <div className='flex justify-center flex-0.5  place-items-center px-2 items-center gap-2'>
       {/* {LogoSvg} */}
       <div className='bg-red-500'>
