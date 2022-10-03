@@ -1,8 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { RegisterStructure } from '../../utils/data.types';
-import { default as bcrypt } from 'bcryptjs'
+import bcrypt from 'bcrypt'
 import User from '../../model/User';
+import dbConnect from '../../lib/dbconnect';
 
 const validateEmail = (email: string) => {
   const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -18,6 +19,11 @@ const validateForm = async (FormData: RegisterStructure) => {
     errors.email = 'Email required';
   } else if (!validateEmail(FormData.email)) {
     errors.email = 'Email address is invalid';
+  }
+  await dbConnect();
+  const emailUser = await User.findOne({ email: FormData.email});
+  if(emailUser){
+    errors.email = "Email address is already in use"
   }
   if (!FormData.password) {
     errors.password = 'Password is required';
@@ -37,7 +43,7 @@ export default async function handler(
   } else {
     const hashedPassword = await bcrypt.hash(FormData.password, 10);
     const newUser = new User({
-      username: FormData.username,
+      name: FormData.username,
       email: FormData.email,
       password: hashedPassword,
     });
