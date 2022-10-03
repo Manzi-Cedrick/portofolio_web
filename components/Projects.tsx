@@ -56,7 +56,7 @@ function Projects() {
                                 <p className='text-backG font-bold'>{project.projectCourses}</p>
                                 <small>{project.tags.map((tageach) => (tageach))}</small>
                             </div>
-                            <div className='flex gap-4 py-5'>
+                            <div className='hidden md:flex gap-4 py-5'>
                                 <button className="btn text-backG font-bold border-solid border-2 border-backG rounded-xl btn-primary flex justify-center gap-2 place-items-center  w-36 h-14"> <FaPlus /> <span>View More</span> </button>
                             </div>
                         </div>

@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className=" lg:px-[4em] py-10 px-2 bg-[#121212]">
+    <div className=" lg:px-[4em] py-10 hidden px-2 bg-[#121212]">
          <div className="text-center flex text-white text-[14px] justify-center py-10  ">
                 <h1 className="font-semibold  bg-backG px-4 py-4 text-[10px] animate-pulse">About</h1>
             </div>
-        <div className='flex gap-2 place-items-center justify-evenly'>
+        <div className='flex flex-col sm:flex-row  gap-2 place-items-center justify-evenly'>
         <div className="text-white py-4 max-w-[50vw]">
             <h1 className='py-5'>Hi, I'm <span className='py-4 border-b-2 border-yellow-500 text-xl font-black hover:text-backG'> Manzi Cedrick</span> </h1>
             <p className='pt-5 font-light text-[#ffffff92]   '>
