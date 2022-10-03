@@ -3,7 +3,7 @@ import { SkillsArray } from '../utils/data.types'
 function Skills() {
 
     return (
-        <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-black" id="skills">
+        <div className="min-h-screen px-4  md:overflow-hidden lg:px-[8em] text-white  bg-[#121212]" id="skills">
             <div className="text-center flex text-white text-[14px] justify-center py-10  ">
                 <h1 className="font-semibold  bg-backG px-4 py-4 text-[10px] animate-pulse">SKILLS & HIGHLIGHTS</h1>
             </div>
