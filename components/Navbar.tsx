@@ -6,19 +6,19 @@ import LogoIcons from '../icons/index'
 function Navbar() {
 
   return (
-    <header className="navbar flex text-[12px] md:text-xl bg-backG h-[10vh] text-white ">
-    <div className='flex justify-center flex-0.5  place-items-center px-2 items-center gap-2'>
+    <header className="navbar flex text-[12px] sticky px-6 z-20 md:text-xl bg-backG h-[10vh] text-white ">
+    <div className='flex justify-center flex-0.5  place-items-center  items-center gap-2'>
       {/* {LogoSvg} */}
-      <div className='bg-red-500'>
+      <div className='pt-5'>
       <LogoIcons/>
       </div>
-        <span>
+        <span className='text-white font-bold'>
             Manzi
         </span>
-        <span className='text-black'>Cedrick</span>
+        <span className='text-black font-black'>Cedrick</span>
     </div>
-    <div className='flex flex-1 text-[12px] justify-center'>
-        <ul className='flex gap-8 justify-center place-content-center items-center text-white'>
+    <div className='hidden md:flex flex-1 text-[12px] justify-center'>
+        <ul className='flex gap-10 justify-center place-content-center items-center font-bold text-white'>
           {LinkArr.map((link)=>(
               <li key={link.id}>
                 <Link href={link.linkUrl}>{link.linkName}</Link>
@@ -26,8 +26,8 @@ function Navbar() {
           ))}
         </ul>
     </div>
-    <div className='flex place-items-center'>
-      <button className='bg-white text-backG border-2 border-yellow-500 rounded-full w-44 h-12 text-sm'>Hire Me</button>
+    <div className='hidden md:flex place-items-center'>
+      <button className='bg-black text-white border-2 border-white rounded-md w-44 py-4 text-sm'>Hire Me</button>
     </div>
 </header>
   )
